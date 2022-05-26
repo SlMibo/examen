@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"&gt;></script>
+</head>
+<body>
+    <div>
+        <h1>Examen de Seminario de Actualización</h1>
+        <h3>Modelo secuencial</h3>
+        <table border="0">
+            <tbody>
+                <tr>
+                    <td>Repeticiones</td>
+                    <td><input type="number" id="repeticiones"/></td>
+                </tr>
+                <tr>
+                    <td>Valor de x</td>
+                    <td><input type="number" id="x"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <input type="button" value="Calcular" name="calcular" id="calcular" onclick="regresion()" /> </td>
+                </tr>
+                <tr>
+                    <td>Valor de y = </td>
+                    <td> <span id="salida"></span> </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Multiplicación manual</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Matriz 1</td>
+                    <td id="matriz1"></td>
+                </tr>
+                <tr>
+                    <td>Matriz 2</td>
+                    <td id="matriz2"></td>
+                </tr>
+                <tr>
+                    <td>Resultado</td>
+                    <td id="resultado"></td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Multiplicación con TensorFlow</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Resultado</td>
+                    <td id="tfmul"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h3>Teoría</h3>
+        <h5>Relación enseñanza-aprendizaje</h5>
+        <p>
+            La enseñanza se nutre del aprendizaje, mientras que el aprendizaje se fortalece con la enseñanza.
+            Es la experiencia y aplicación de ambas lo que logra un avance en las capacidades. Esto mismo aplica en el aprendizaje automático.
+        </p>
+        <h5>tf.tensor([1])</h5>
+        <p>Se trata de un tensor unidimensional con el valor 1, un dato del tipo int32</p>
+        <h5>¿TensorFlow.js tiene acceso a la GPU, CPU, Memoria, Disco?</h5>
+        <p>TensorFlow tiene funciones específicas que acceden y consultan la memoria usada por el programa que ejecuta como tf.memory()</p>
+    </div>
+
+    <script src="./examen.js"></script>
+</body>
+</html>
